@@ -6,12 +6,6 @@
   --color_white: #fff;
 }
 
-h1, h2, p, ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
 /* * {
   border: 2px solid red;
 } */
@@ -21,11 +15,6 @@ h1, h2, p, ul {
   max-width: 1600px;
   margin: 0 auto;
   font-family: 'Helvetica Neue', Arial, sans-serif;
-}
-
-.link_style {
-  text-decoration: none;
-  color: var(--color_blue);
 }
 
 
@@ -54,17 +43,18 @@ h1, h2, p, ul {
 }
 
 .header__title {
-  width: 730px;
+  max-width: 730px;
   align-self: center;
   z-index: 2;
-  margin-left: 64px;
+  margin: 0 0 0 64px;
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;
 }
 
 .header__subtitle {
-  width: 388px;
+  margin: 0;
+  max-width: 388px;
   position: absolute;
   left: 64px;
   bottom: 30px;
@@ -72,6 +62,11 @@ h1, h2, p, ul {
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
+}
+
+.header__link {
+  text-decoration: none;
+  color: var(--color_blue);
 }
 
 .header__main-illustration {
@@ -108,7 +103,8 @@ h1, h2, p, ul {
 }
 
 .two-columns__brief {
-  width: 175px;
+  margin: 0;
+  max-width: 175px;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -124,14 +120,14 @@ h1, h2, p, ul {
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-  margin: 0;
+  margin: 0 0 30px 0;
 }
 
-.two-columns__paragraph_margin {
-  margin: 30px 0;
+.two-columns__paragraph:last-child {
+  margin-bottom: 0;
 }
 
-.two-columns__span-accept {
+.two-columns__span-accent {
   line-height: 34px;
   font-size: 24px;
   font-weight: bold;
@@ -145,25 +141,25 @@ h1, h2, p, ul {
   align-items: center;
 }
 
-.digits_align {
-  text-align: center;
-  width: 60%;
-}
-
 .section-title {
+  margin: 0;
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
+  text-align: center;
+  max-width: 60%;
 }
 
 .section-subtitle {
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-  margin-top: 20px;
+  margin: 20px 0 0 0;
 }
 
 .table {
+  list-style: none;
+  padding: 0;
   width: 1100px;
   display: flex;
   justify-content: space-between;
@@ -179,6 +175,7 @@ h1, h2, p, ul {
 }
 
 .table__heading {
+  margin: 0;
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
@@ -188,12 +185,12 @@ h1, h2, p, ul {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-  margin-top: 20px;
+  margin: 20px 0 0 0;
 }
 
 
 .feynman {
-  height: 890px;
+  min-height: 890px;
   background-color: var(--color_light-gray);
   background-image: url(/images/feynman.png);
   background-repeat: no-repeat;
@@ -206,8 +203,8 @@ h1, h2, p, ul {
 }
 
 .feynman__title {
-  margin-top: 100px;
-  width: 648px;
+  margin: 100px 0 0 0;
+  max-width: 648px;
   line-height: 1.15;
   font-size: 120px;
   font-weight: bold;
@@ -215,7 +212,7 @@ h1, h2, p, ul {
 }
 
 .feynman__subtitle {
-  margin-top: 70px;
+  margin: 70px 0 0 0;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
@@ -228,6 +225,8 @@ h1, h2, p, ul {
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
+  text-decoration: none;
+  color: var(--color_blue);
 }
 
 
@@ -288,7 +287,7 @@ h1, h2, p, ul {
   margin: 60px auto 40px auto;
 }
 
-.column_content_copyright {
+.footer__column_content_copyright {
   flex-basis: 711px;
   display: flex;
   flex-direction: column;
@@ -309,46 +308,38 @@ h1, h2, p, ul {
 }
 
 .footer__column-heading {
+  margin: 0;
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
 }
 
-.footer__column-link {
-  margin: 20px 0 16px;
-  list-style: none;
-}
 .footer__column-links {
+  list-style: none;
+  margin: 20px 0 16px 0;
+  padding: 0;
+}
+
+.footer__column-link {
   color: var(--color_white);
   font-weight: normal;
+  text-decoration: none;
+  line-height: 30px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
 }
-.column_content_social {
+
+.footer__column_content_social {
   color: var(--color_white);
   display: flex;
   flex-direction: column;
 }
 
-.footer__link_style {
-  text-decoration: none;
-  color: var(--color_white);
-}
-
-.icon_size {
+.footer__social-link {
   width: 16px;
   height: 16px;
   background-repeat: no-repeat;
   background-size: cover;
   margin-right: 10px;
-}
-
-.facebook_color_white {
-  background-image: url(/images/facebook_color_white.svg);
-}
-
-.vk_color_white {
-  background-image: url(/images/vk_color_white.svg);
-}
-
-.instagram_color_white {
-  background-image: url(/images/instagram_color_white.svg);
 }
