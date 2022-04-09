@@ -1,0 +1,5 @@
+.footer__column_content_social {
+  color: var(--color_white);
+  display: flex;
+  flex-direction: column;
+}
