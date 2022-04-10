@@ -5,4 +5,5 @@
   background-color: var(--color_light-gray);
   position: relative;
   display: flex;
+  overflow: hidden;
 }

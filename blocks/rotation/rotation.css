@@ -1,0 +1,12 @@
+@keyframes square-pic_rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.square-pic_rotation {
+  animation: square-pic_rotate linear 20s infinite forwards;
+}
