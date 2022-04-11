@@ -13,11 +13,11 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-.link_transition {
+a {
   opacity: 1;
   transition: opacity .2s ease-in-out;
 }
 
-.link_transition:hover {
+a:hover {
   opacity: .6;
 }
