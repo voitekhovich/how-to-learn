@@ -4,4 +4,5 @@
   font-size: 30px;
   text-decoration: none;
   color: var(--color_blue);
+  align-self: flex-start;
 }
