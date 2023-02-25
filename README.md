@@ -20,6 +20,6 @@ https://voitekhovich.github.io/how-to-learn/
 
 ## Запуск локально
 
-* Скачать архив .zip
-* Извлечь всё
-* Запустить index.html
+* **<>Code** ➜ **Download ZIP**
+* Извлечь все
+* Запустить **index.html**
