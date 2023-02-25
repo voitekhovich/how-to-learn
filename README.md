@@ -17,3 +17,9 @@ https://user-images.githubusercontent.com/30049720/221370596-5d9565f0-2671-4a89-
 ## GitHub Pages
 
 https://voitekhovich.github.io/how-to-learn/
+
+## Запуск локально
+
+* Скачать архив .zip
+* Извлечь всё
+* Запустить index.html
